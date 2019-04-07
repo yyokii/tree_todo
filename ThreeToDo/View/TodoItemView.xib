@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TodoItemView" customModule="ThreeToDo" customModuleProvider="target">
+            <connections>
+                <outlet property="orderLabel" destination="dKA-2Y-PnU" id="4zR-c1-fxa"/>
+                <outlet property="rightImageView" destination="Q6d-LN-Bb1" id="izh-QO-lha"/>
+                <outlet property="titleLbl" destination="9gu-fW-HQv" id="V3h-pe-xoJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="295" height="122"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My First Todo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="9gu-fW-HQv">
+                    <rect key="frame" x="8" y="52.5" width="279" height="17"/>
+                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blue" translatesAutoresizingMaskIntoConstraints="NO" id="Q6d-LN-Bb1">
+                    <rect key="frame" x="173" y="0.0" width="122" height="122"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Q6d-LN-Bb1" secondAttribute="height" multiplier="1:1" id="M5d-aO-hi2"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 st" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dKA-2Y-PnU">
+                    <rect key="frame" x="8" y="10" width="35.5" height="24"/>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9gu-fW-HQv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="5w2-d7-2Ry"/>
+                <constraint firstItem="dKA-2Y-PnU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="Ekj-pq-yow"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9gu-fW-HQv" secondAttribute="trailing" constant="8" id="SZ7-J6-YUg"/>
+                <constraint firstItem="dKA-2Y-PnU" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="c5A-OG-oNL"/>
+                <constraint firstItem="Q6d-LN-Bb1" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="gG2-4V-AWF"/>
+                <constraint firstItem="9gu-fW-HQv" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="iMp-OV-XGY"/>
+                <constraint firstItem="Q6d-LN-Bb1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lF8-TJ-8xL"/>
+                <constraint firstItem="Q6d-LN-Bb1" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="nAp-jc-pLd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="109.59999999999999" y="-167.31634182908547"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="blue" width="112.5" height="112.5"/>
+    </resources>
+</document>

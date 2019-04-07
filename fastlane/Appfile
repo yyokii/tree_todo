@@ -1,0 +1,14 @@
+app_identifier("yyokii.ThreeToDo") # The bundle identifier of your app
+apple_id("yyokii.h@gmail.com") # Your Apple email address
+
+team_id "Yoki Higashihara"  # Developer Portal Team ID
+
+for_platform :ios do
+  app_identifier "yyokii.ThreeToDo"
+  for_lane :release do
+    app_identifier "yyokii.ThreeToDop"
+  end
+  for_lane :beta do
+    app_identifier "yyokii.ThreeToDo"
+  end
+end
